@@ -26,6 +26,13 @@
 > [!NOTE]
 > **ขอบเขตที่ทดสอบแล้ว:** ปลั๊กอินนี้พัฒนาและทดสอบบน **Windows 10 / 11 (x64) ร่วมกับ Docker Desktop และ Antigravity IDE** เท่านั้น เนื่องจากผมไม่มีเครื่อง Mac ให้ทดสอบ จึงยังไม่รองรับ macOS อย่างเป็นทางการ
 
+<br />
+
+<div align="center">
+  <img src="assets/antigravity_showcase.png" alt="Whale Desktop running inside Antigravity IDE" width="92%" />
+  <p><i>ภาพตัวอย่างการใช้งานจริงใน Antigravity IDE: แชตโปรเจกต์หลักฝั่งซ้ายทำงานคู่กับแผง Whale Screen (WS-STREAM + Chromium + Whale Telemetry) ทางฝั่งขวา</i></p>
+</div>
+
 ---
 
 ## ความสามารถหลักของเวอร์ชัน 1.0.0
@@ -145,6 +152,7 @@ whale-desktop/
 ├── LICENSE                      # สัญญาอนุญาต MIT License
 ├── .gitignore                   # กันไฟล์ขนาดใหญ่ (เช่น images/*.tar.gz) และ .venv ไม่ให้เข้า Git
 ├── assets/
+│   ├── antigravity_showcase.png # ภาพตัวอย่างหน้าต่าง Antigravity คู่กับแผง Whale Screen
 │   ├── banner.jpg               # แบนเนอร์หลักของโปรเจกต์
 │   ├── hud_animated.svg         # โค้ดภาพเคลื่อนไหว Whale CMD Status HUD
 │   ├── social_preview.png       # ภาพ Social Preview (1280x640) สำหรับแชร์ลิงก์
