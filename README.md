@@ -45,6 +45,11 @@
 ### 3. ดูจอสดบน Antigravity และหน้าต่าง Windows
 ภายใน Antigravity มีแผง **Whale Screen** (MCP App UI) ที่สลับโหมดดูได้ทั้ง `Stream`, `PNG` และ `Live VNC` พร้อมเปลี่ยนความละเอียดหน้าจอแบบสดผ่าน `xrandr` (`1280x720`, `1600x900`, `1920x1080`) หากอยากเปิดดูแยกต่างหากบน Windows ตัวปลั๊กอินใช้ `pywebview` (Edge WebView2) ใน `host_webview.py` และมีหน้าต่างคอนโซล **Whale CMD Status HUD** แสดง % CPU, RAM, ขนาดไฟล์แบ็กอัป และล็อกการทำงานล่าสุดให้ดูตลอดเวลา
 
+| Whale CMD Status HUD (SVG เคลื่อนไหว) | AT-SPI2 + Thai/Eng OCR Set-of-Mark |
+| :---: | :---: |
+| <img src="assets/hud_animated.svg" alt="Whale Desktop Live HUD" width="100%"> | <img src="assets/vision_preview.png" alt="Whale Desktop AT-SPI2 and OCR Vision" width="100%"> |
+| *คอนโซล Whale CMD Status HUD แสดงสถานะ Docker, แบ็กอัป และล็อกการทำงานแบบเรียลไทม์* | *ภาพจริงจาก `desktop_inspect_ui` ตีกรอบปุ่มสีฟ้า (`AT-SPI2`) และข้อความสีเหลือง (`OCR TH/EN`)* |
+
 ---
 
 ## ความต้องการของระบบ

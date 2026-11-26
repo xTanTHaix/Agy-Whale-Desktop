@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 560" width="920" height="560" role="img" aria-label="Whale Desktop Live HUD Terminal Animation">
+  <defs>
+    <linearGradient id="bgAura" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#040812" />
+      <stop offset="55%" stop-color="#071122" />
+      <stop offset="100%" stop-color="#050b16" />
+    </linearGradient>
+    <linearGradient id="winBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.65" />
+    </linearGradient>
+    <linearGradient id="scanSweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+    <clipPath id="termClip">
+      <rect x="20" y="16" width="880" height="528" rx="14" />
+    </clipPath>
+    <style>
+      .mono {
+        font-family: "Cascadia Mono", "Consolas", "DejaVu Sans Mono", "Courier New", monospace;
+        font-size: 13.5px;
+        letter-spacing: 0.1px;
+        white-space: pre;
+      }
+      .hdr { font-family: "Segoe UI", system-ui, sans-serif; font-size: 12.5px; font-weight: 600; }
+      .cyan { fill: #22d3ee; font-weight: 700; }
+      .white { fill: #f8fafc; font-weight: 700; }
+      .muted { fill: #94a3b8; }
+      .blue { fill: #3b82f6; }
+      .green { fill: #4ade80; font-weight: 700; }
+      .yellow { fill: #facc15; font-weight: 700; }
+      .dimlog { fill: #94a3b8; }
+      .label { fill: #e2e8f0; font-weight: 700; }
+      .val { fill: #cbd5e1; }
+      .url { fill: #38bdf8; }
+
+      @keyframes whaleBob {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-4px); }
+      }
+      @keyframes waveShift {
+        0%, 100% { transform: translateX(0px); }
+        50% { transform: translateX(6px); }
+      }
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.45; transform: scale(0.86); }
+      }
+      @keyframes blinkCursor {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes spoutGlow {
+        0%, 100% { fill: #22d3ee; }
+        50% { fill: #a5f3fc; }
+      }
+      @keyframes logReveal1 {
+        0%, 8% { opacity: 0.55; }
+        12%, 88% { opacity: 1; }
+        95%, 100% { opacity: 0.55; }
+      }
+      @keyframes logReveal2 {
+        0%, 20% { opacity: 0.55; }
+        25%, 88% { opacity: 1; }
+        95%, 100% { opacity: 0.55; }
+      }
+      @keyframes logReveal3 {
+        0%, 34% { opacity: 0.55; }
+        39%, 88% { opacity: 1; }
+        95%, 100% { opacity: 0.55; }
+      }
+      @keyframes logReveal4 {
+        0%, 48% { opacity: 0.55; }
+        53%, 88% { opacity: 1; }
+        95%, 100% { opacity: 0.55; }
+      }
+      @keyframes logReveal5 {
+        0%, 62% { opacity: 0.65; fill: #94a3b8; }
+        67%, 88% { opacity: 1; fill: #67e8f9; }
+        95%, 100% { opacity: 0.65; fill: #94a3b8; }
+      }
+      .whale-group { animation: whaleBob 3.2s ease-in-out infinite; transform-origin: 200px 115px; }
+      .wave-row { animation: waveShift 2.6s ease-in-out infinite; }
+      .spout { animation: spoutGlow 2s ease-in-out infinite; }
+      .live-dot { animation: pulseDot 1.6s ease-in-out infinite; transform-origin: 830px 35px; }
+      .cursor { animation: blinkCursor 1s steps(1, end) infinite; }
+      .l1 { animation: logReveal1 8s linear infinite; }
+      .l2 { animation: logReveal2 8s linear infinite; }
+      .l3 { animation: logReveal3 8s linear infinite; }
+      .l4 { animation: logReveal4 8s linear infinite; }
+      .l5 { animation: logReveal5 8s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Ambient frame -->
+  <rect width="920" height="560" rx="18" fill="url(#bgAura)" />
+
+  <!-- Terminal Window -->
+  <rect x="20" y="16" width="880" height="528" rx="14" fill="#0c0e14" stroke="url(#winBorder)" stroke-width="1.8" />
+
+  <!-- Window Title Bar -->
+  <g clip-path="url(#termClip)">
+    <rect x="20" y="16" width="880" height="38" fill="#171b26" />
+    <rect x="30" y="22" width="248" height="32" rx="8" fill="#0c0e14" />
+    <circle cx="48" cy="37" r="6" fill="#38bdf8" />
+    <text x="64" y="42" class="hdr" fill="#e2e8f0">Whale Desktop HUD - Docker</text>
+
+    <!-- Live pill -->
+    <rect x="814" y="26" width="66" height="20" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+    <circle cx="828" cy="36" r="4" fill="#4ade80" class="live-dot" />
+    <text x="839" y="40" class="hdr" fill="#a7f3d0" style="font-size:11px;">LIVE</text>
+  </g>
+
+  <!-- Subtle glowing sweep bar -->
+  <rect x="21" y="54" width="878" height="2" fill="url(#scanSweep)" />
+
+  <!-- Animated Docker Whale ASCII -->
+  <g class="whale-group" xml:space="preserve">
+    <text x="44" y="84" class="mono spout">                 ##         .</text>
+    <text x="44" y="101" class="mono spout">           ## ## ##        ==</text>
+    <text x="44" y="118" class="mono spout">        ## ## ## ##       ===</text>
+    <text x="44" y="135" class="mono cyan">    /""""""""""""""""\___/ ===</text>
+    <g class="wave-row">
+      <text x="44" y="152" class="mono cyan">~~~ {  ~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~</text>
+    </g>
+    <text x="44" y="169" class="mono cyan">     \______ o           __/</text>
+    <text x="44" y="186" class="mono cyan">       \    \         __/</text>
+    <text x="44" y="203" class="mono cyan">        \____\_______/   <tspan class="white">WHALE DESKTOP</tspan><tspan class="cyan"> (Docker + noVNC v1.0.0)</tspan></text>
+  </g>
+
+  <!-- Rising bubbles -->
+  <circle cx="204" cy="70" r="2.2" fill="#38bdf8" opacity="0.8">
+    <animate attributeName="cy" values="72;54;72" dur="3.4s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.2;0.95;0.2" dur="3.4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="242" cy="64" r="1.8" fill="#a5f3fc" opacity="0.7">
+    <animate attributeName="cy" values="66;50;66" dur="2.8s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.8s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Top Divider -->
+  <text x="36" y="226" class="mono blue" xml:space="preserve">========================================================================================================</text>
+
+  <!-- Live Status Metrics -->
+  <g xml:space="preserve">
+    <text x="44" y="248" class="mono"><tspan class="label">Time:</tspan><tspan class="val">      2026-11-26 19:45:00   </tspan><tspan class="label">Docker:</tspan><tspan class="green"> ONLINE   </tspan><tspan class="label">Desktop:</tspan><tspan class="green"> [*] RUNNING (1280x720)</tspan></text>
+    <text x="44" y="268" class="mono"><tspan class="label">Container:</tspan><tspan class="val"> whale-desktop (Up cleanly • 6 vCPU / 6g RAM • non-root)</tspan></text>
+    <text x="44" y="288" class="mono"><tspan class="label">Vision:</tspan><tspan class="val">    AT-SPI2 + Tesseract OCR (tha+eng) • HTTP /ctl ~19 ms</tspan></text>
+    <text x="44" y="308" class="mono"><tspan class="label">Stream:</tspan><tspan class="val">    libturbojpeg 4:4:4 (q=93) -&gt; Auto Lossless PNG Settle</tspan></text>
+    <text x="44" y="328" class="mono"><tspan class="label">Backup:</tspan><tspan class="green">    READY - 369.9 MB (whale-desktop-v1.tar.gz)</tspan></text>
+    <text x="44" y="348" class="mono"><tspan class="label">noVNC URL:</tspan><tspan class="url"> http://127.0.0.1:16080/vnc.html?autoconnect=1&amp;resize=off</tspan></text>
+  </g>
+
+  <!-- Mid Divider -->
+  <text x="36" y="370" class="mono blue" xml:space="preserve">========================================================================================================</text>
+
+  <!-- Recent GUI Activity Stream -->
+  <text x="44" y="392" class="mono label">Recent GUI Activity:</text>
+  <g xml:space="preserve">
+    <text x="44" y="414" class="mono dimlog l1">  [19:41:12] inspect_ui (atspi=3, ocr=6, Set-of-Mark #1..#5)</text>
+    <text x="44" y="434" class="mono dimlog l2">  [19:41:13] click_text "Open Action" -&gt; smooth glide (402, 170)</text>
+    <text x="44" y="454" class="mono dimlog l3">  [19:41:15] desktop_act x3 changed=True (0.72% pixels updated)</text>
+    <text x="44" y="474" class="mono dimlog l4">  [19:41:17] Live XRandR resized -&gt; 1920x1080 -&gt; 1280x720</text>
+    <text x="44" y="494" class="mono dimlog l5">  [19:41:46] Backup saved -&gt; images/whale-desktop-v1.tar.gz (369.9 MB)</text>
+  </g>
+
+  <!-- Bottom Divider & Keybindings -->
+  <text x="36" y="514" class="mono blue" xml:space="preserve">--------------------------------------------------------------------------------------------------------</text>
+  <text x="44" y="534" class="mono" xml:space="preserve"><tspan class="yellow">[O]</tspan><tspan class="val"> Open noVNC in pywebview   </tspan><tspan class="yellow">[R]</tspan><tspan class="val"> Refresh Now   </tspan><tspan class="yellow">[Q]</tspan><tspan class="val"> Close Window </tspan><tspan class="cyan cursor">_</tspan></text>
+</svg>
