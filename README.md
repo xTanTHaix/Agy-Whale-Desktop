@@ -4,7 +4,7 @@
 
 # Whale Desktop
 
-**เดสก์ท็อป Linux แยกตัวใน Docker สำหรับใช้งานร่วมกับ Antigravity IDE บน Windows**
+**เดสก์ท็อป Linux แยกตัวใน Docker สำหรับใช้งานร่วมกับ Antigravity บน Windows**
 
 [![Platform Windows](https://img.shields.io/badge/Windows-10%20%7C%2011%20(x64)-0078D6?style=for-the-badge&logo=windows&logoColor=white)](#-ความต้องการของระบบ)
 [![Docker Desktop](https://img.shields.io/badge/Docker-Desktop%20Container-2496ED?style=for-the-badge&logo=docker&logoColor=white)](#-วิธีติดตั้งและเริ่มต้นใช้งาน)
@@ -24,7 +24,7 @@
 ตัวปลั๊กอินจะจำลองคอมพิวเตอร์ Linux (`Xvfb + XFCE4 + x11vnc + noVNC + pywebview`) ไว้ในคอนเทนเนอร์ Docker ของตัวเอง แล้วต่อเครื่องมือเข้าหา Antigravity ผ่านโปรโตคอล MCP ทำให้เราคุมทรัพยากร CPU และ RAM ได้อิสระ ปิดคอนเทนเนอร์เมื่อไหร่ระบบก็สะอาดเหมือนเดิม และเก็บโปรแกรมที่ติดตั้งเพิ่มไว้เป็นไฟล์แบ็กอัปแยกต่างหากได้
 
 > [!NOTE]
-> **ขอบเขตที่ทดสอบแล้ว:** ปลั๊กอินนี้พัฒนาและทดสอบบน **Windows 10 / 11 (x64) ร่วมกับ Docker Desktop และ Antigravity IDE** เท่านั้น เนื่องจากผมไม่มีเครื่อง Mac ให้ทดสอบ จึงยังไม่รองรับ macOS อย่างเป็นทางการ
+> **ขอบเขตที่ทดสอบแล้ว:** ปลั๊กอินนี้พัฒนาและทดสอบบน **Windows 10 / 11 (x64) ร่วมกับ Docker Desktop และ Antigravity** เท่านั้น เนื่องจากผมไม่มีเครื่อง Mac ให้ทดสอบ จึงยังไม่รองรับ macOS อย่างเป็นทางการ
 
 <br />
 
@@ -66,7 +66,7 @@
 | ระบบปฏิบัติการ | Windows 10 หรือ Windows 11 (x64) | ใช้ Win32 Console และ Edge WebView2 (`pywebview`) |
 | Container Engine | Docker Desktop | แนะนำ WSL2 backend เพื่อเปิดรันและจำกัด CPU/RAM |
 | Python (Host) | Python 3.10 ขึ้นไป | แนะนำ 3.12 และติ๊กเลือก Add Python to PATH ตอนติดตั้ง |
-| MCP Client | Antigravity IDE | รองรับ Stdio MCP Server และ MCP App (`ui://`) |
+| MCP Client | Antigravity | รองรับ Stdio MCP Server และ MCP App (`ui://`) |
 
 ---
 
