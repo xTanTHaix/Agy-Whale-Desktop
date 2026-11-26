@@ -29,8 +29,8 @@
 <br />
 
 <div align="center">
-  <img src="assets/antigravity_showcase.png" alt="Whale Desktop running inside Antigravity IDE" width="92%" />
-  <p><i>ภาพตัวอย่างการใช้งานจริงใน Antigravity : แชตโปรเจกต์หลักฝั่งซ้ายทำงานคู่กับแผง Whale Screen (WS-STREAM + Chromium + Whale Telemetry) ทางฝั่งขวา</i></p>
+  <img src="assets/antigravity_showcase.png" alt="Whale Desktop running inside Antigravity" width="92%" />
+  <p><i>ภาพตัวอย่างการใช้งานจริงใน Antigravity: แชตโปรเจกต์ฝั่งซ้ายทำงานคู่กับแผง Whale Screen (WS-STREAM + Chromium + Whale Telemetry) ทางฝั่งขวา</i></p>
 </div>
 
 ---
