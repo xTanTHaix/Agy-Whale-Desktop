@@ -132,6 +132,9 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1 -ReleaseArchiveUrl "https
 
 ## โครงสร้างไฟล์ในโปรเจกต์
 
+<details>
+<summary>คลิกเพื่อดูโครงสร้างไฟล์ทั้งหมดในโปรเจกต์ (<code>whale-desktop/</code>)</summary>
+
 ```text
 whale-desktop/
 ├── plugin.json                  # เมตาเดตาเวอร์ชัน 1.0.0 ของ Antigravity Plugin
@@ -165,6 +168,8 @@ whale-desktop/
 └── skills/
     └── whale-desktop/SKILL.md   # คู่มือขั้นตอน Inspect -> Act -> Verify สำหรับ AI Agent
 ```
+
+</details>
 
 ---
 
