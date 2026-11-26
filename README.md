@@ -12,7 +12,7 @@
 [![Version 1.0.0](https://img.shields.io/badge/Version-v1.0.0-0EA5E9?style=for-the-badge&logo=semver&logoColor=white)](plugin.json)
 [![Antigravity MCP](https://img.shields.io/badge/MCP-Antigravity%20IDE-6366F1?style=for-the-badge&logo=google&logoColor=white)](mcp_config.json)
 [![Thai Eng OCR](https://img.shields.io/badge/Vision-AT--SPI2%20%2B%20OCR%20TH%2FEN-059669?style=for-the-badge&logo=tesseract&logoColor=white)](docker/desktop_ctl.py)
-[![License MIT](https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](#-สัญญาอนุญาต-license)
+[![License MIT](https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Ko-fi Support](https://img.shields.io/badge/Support-Ko--fi-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white)](https://ko-fi.com/xtanthaix)
 
 </div>
@@ -45,10 +45,10 @@
 ### 3. ดูจอสดบน Antigravity และหน้าต่าง Windows
 ภายใน Antigravity มีแผง **Whale Screen** (MCP App UI) ที่สลับโหมดดูได้ทั้ง `Stream`, `PNG` และ `Live VNC` พร้อมเปลี่ยนความละเอียดหน้าจอแบบสดผ่าน `xrandr` (`1280x720`, `1600x900`, `1920x1080`) หากอยากเปิดดูแยกต่างหากบน Windows ตัวปลั๊กอินใช้ `pywebview` (Edge WebView2) ใน `host_webview.py` และมีหน้าต่างคอนโซล **Whale CMD Status HUD** แสดง % CPU, RAM, ขนาดไฟล์แบ็กอัป และล็อกการทำงานล่าสุดให้ดูตลอดเวลา
 
-| Whale CMD Status HUD (SVG เคลื่อนไหว) | AT-SPI2 + Thai/Eng OCR Set-of-Mark |
-| :---: | :---: |
-| <img src="assets/hud_animated.svg" alt="Whale Desktop Live HUD" width="100%"> | <img src="assets/vision_preview.png" alt="Whale Desktop AT-SPI2 and OCR Vision" width="100%"> |
-| *คอนโซล Whale CMD Status HUD แสดงสถานะ Docker, แบ็กอัป และล็อกการทำงานแบบเรียลไทม์* | *ภาพจริงจาก `desktop_inspect_ui` ตีกรอบปุ่มสีฟ้า (`AT-SPI2`) และข้อความสีเหลือง (`OCR TH/EN`)* |
+<div align="center">
+  <img src="assets/hud_animated.svg" alt="Whale Desktop Live HUD" width="88%" />
+  <p><i>คอนโซล Whale CMD Status HUD แบบ SVG เคลื่อนไหว แสดงสถานะ Docker, แบ็กอัป และล็อกการทำงานแบบเรียลไทม์</i></p>
+</div>
 
 ---
 
@@ -139,9 +139,12 @@ whale-desktop/
 ├── requirements.txt             # รายการแพ็กเกจ Python ฝั่ง Windows (.venv)
 ├── install.ps1                  # สคริปต์ติดตั้งครบชุดสำหรับ Windows + Docker Desktop
 ├── README.md                    # เอกสารแนะนำการใช้งานฉบับนี้
+├── LICENSE                      # สัญญาอนุญาต MIT License
 ├── .gitignore                   # กันไฟล์ขนาดใหญ่ (เช่น images/*.tar.gz) และ .venv ไม่ให้เข้า Git
 ├── assets/
 │   ├── banner.jpg               # แบนเนอร์หลักของโปรเจกต์
+│   ├── hud_animated.svg         # โค้ดภาพเคลื่อนไหว Whale CMD Status HUD
+│   ├── social_preview.png       # ภาพ Social Preview (1280x640) สำหรับแชร์ลิงก์
 │   └── logo.svg                 # ไอคอนปลั๊กอิน
 ├── bin/
 │   ├── whale_mcp.py             # MCP Server หลักและระบบควบคุมหน้าจอ
@@ -189,4 +192,4 @@ whale-desktop/
 
 ## สัญญาอนุญาต (License)
 
-โปรเจกต์นี้เผยแพร่ภายใต้สัญญาอนุญาต **MIT License** อนุญาตให้นำไปใช้งาน แก้ไข ดัดแปลง แจกจ่าย หรือใช้ร่วมกับโปรเจกต์เชิงพาณิชย์ได้อย่างเสรีครับ
+โปรเจกต์นี้เผยแพร่ภายใต้สัญญาอนุญาต [MIT License](LICENSE) อนุญาตให้นำไปใช้งาน แก้ไข ดัดแปลง แจกจ่าย หรือใช้ร่วมกับโปรเจกต์เชิงพาณิชย์ได้อย่างเสรีครับ
