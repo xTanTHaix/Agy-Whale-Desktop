@@ -1,0 +1,17 @@
+# Python / Node local environments
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+ui_src/node_modules/
+
+# Large Docker image archives (distributed via GitHub Releases instead of Git)
+images/*.tar
+images/*.tar.gz
+images/*.gz.tmp
+images/manifest.json
+
+# Runtime logs & local state
+plugin_data/
+*.log
+temp_*.png

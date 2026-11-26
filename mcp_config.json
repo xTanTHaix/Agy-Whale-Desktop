@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "whale-desktop": {
+      "args": [
+        "${PLUGIN_ROOT}\\bin\\whale_mcp.py"
+      ],
+      "env": {
+        "WHALE_DESKTOP_DATA": "${PLUGIN_DATA}",
+        "PYTHONUNBUFFERED": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "command": "python"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "whale-desktop",
+  "displayName": "Whale Desktop",
+  "version": "1.0.0",
+  "author": "xTanTHaix",
+  "homepage": "https://github.com/xTanTHaix/Agy-Whale-Desktop",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xTanTHaix/Agy-Whale-Desktop"
+  },
+  "description": "Isolated Docker Linux desktop on Windows (Xvfb + XFCE4 + pywebview) with TurboJPEG 4:4:4 + lossless PNG live viewer, AT-SPI2 + Thai/English OCR Set-of-Mark UI inspection, smooth cursor & key-hold control, macro batches, and offline image backup.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Start Whale Desktop, inspect visible UI controls, and open Terminal",
+    "Take a screenshot of Whale Desktop and read what is shown on screen",
+    "Save the running Whale Desktop container state into the plugin image backup"
+  ]
+}

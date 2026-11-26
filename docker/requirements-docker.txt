@@ -1,0 +1,4 @@
+# Python packages installed inside Docker container (/opt/whale-webview & system python3).
+# System apt also installs python3-pil, python3-pyatspi, gir1.2-atspi-2.0, tesseract-ocr, tesseract-ocr-tha, tesseract-ocr-eng.
+pywebview>=5.0.0
+pillow>=9.4.0

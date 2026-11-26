@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <defs>
+    <linearGradient id="sqBg" x1="56" y1="36" x2="456" y2="476" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#13264d"/>
+      <stop offset="55%" stop-color="#0a162e"/>
+      <stop offset="100%" stop-color="#050b18"/>
+    </linearGradient>
+    <linearGradient id="sqBorder" x1="40" y1="40" x2="472" y2="472" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.48"/>
+      <stop offset="50%" stop-color="#1e3a6e" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="glassSheen" x1="256" y1="32" x2="256" y2="270" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="65%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="monStroke" x1="80" y1="90" x2="432" y2="352" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#1e4976" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="whaleGrad" x1="126" y1="220" x2="412" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="52%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="standGrad" x1="256" y1="348" x2="256" y2="418" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e4976"/>
+      <stop offset="100%" stop-color="#4f6ef7"/>
+    </linearGradient>
+    <linearGradient id="cube1" x1="170" y1="132" x2="310" y2="215" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#a5f3fc"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="cube2" x1="250" y1="176" x2="312" y2="214" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <clipPath id="sqClip">
+      <rect x="32" y="32" width="448" height="448" rx="108"/>
+    </clipPath>
+  </defs>
+
+  <!-- Squircle App Icon Base -->
+  <rect x="32" y="32" width="448" height="448" rx="108" fill="url(#sqBg)" stroke="url(#sqBorder)" stroke-width="5"/>
+
+  <!-- Glossy Top Glass Highlight -->
+  <g clip-path="url(#sqClip)">
+    <path d="M24 24 H488 V205 C382 248 130 248 24 205 Z" fill="url(#glassSheen)"/>
+  </g>
+
+  <!-- Monitor Stand & Base -->
+  <path d="M214 348 H298 L314 398 H198 Z" fill="url(#standGrad)"/>
+  <rect x="164" y="395" width="184" height="17" rx="8.5" fill="url(#whaleGrad)"/>
+
+  <!-- Monitor Frame -->
+  <rect x="78" y="88" width="356" height="260" rx="34" fill="#060d1c" fill-opacity="0.72" stroke="url(#monStroke)" stroke-width="4.5"/>
+
+  <!-- Window Control Dots -->
+  <circle cx="112" cy="118" r="6.5" fill="#22d3ee"/>
+  <circle cx="132" cy="118" r="6.5" fill="#1e5575"/>
+  <circle cx="152" cy="118" r="6.5" fill="#163854"/>
+
+  <!-- Container Stack (3 + 1) -->
+  <rect x="218" y="135" width="38" height="33" rx="7.5" fill="#a5f3fc"/>
+  <rect x="172" y="176" width="38" height="33" rx="7.5" fill="url(#cube1)"/>
+  <rect x="218" y="176" width="38" height="33" rx="7.5" fill="url(#cube1)"/>
+  <rect x="264" y="176" width="38" height="33" rx="7.5" fill="url(#cube2)"/>
+
+  <!-- Sleek Whale Silhouette with Forked Tail -->
+  <path d="M126 244 C126 226 140 218 160 218 H312 C331 218 345 206 355 184 C362 169 378 164 391 174 C398 180 400 195 391 208 C406 205 419 214 417 228 C415 243 397 254 374 252 C360 296 318 326 246 326 C172 326 126 294 126 244 Z" fill="url(#whaleGrad)"/>
+
+  <!-- Glossy Eye -->
+  <circle cx="176" cy="258" r="10.5" fill="#060d1c"/>
+  <circle cx="179" cy="255" r="3.6" fill="#ffffff"/>
+
+  <!-- Subtle Smile / Belly Groove -->
+  <path d="M148 286 C188 304 268 308 324 286" stroke="#06101f" stroke-opacity="0.34" stroke-width="6.5" stroke-linecap="round"/>
+</svg>
