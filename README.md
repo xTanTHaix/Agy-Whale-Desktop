@@ -29,7 +29,7 @@
 <br />
 
 <div align="center">
-  <img src="assets/antigravity_showcase.png" alt="Whale Desktop running inside Antigravity" width="92%" />
+  <img src="assets/antigravity_showcase.jpg" alt="Whale Desktop running inside Antigravity" width="100%" />
   <p><i>ภาพตัวอย่างการใช้งานจริงใน Antigravity: แชตโปรเจกต์ฝั่งซ้ายทำงานคู่กับแผง Whale Screen (WS-STREAM + Chromium + Whale Telemetry) ทางฝั่งขวา</i></p>
 </div>
 
@@ -152,7 +152,7 @@ whale-desktop/
 ├── LICENSE                      # สัญญาอนุญาต MIT License
 ├── .gitignore                   # กันไฟล์ขนาดใหญ่ (เช่น images/*.tar.gz) และ .venv ไม่ให้เข้า Git
 ├── assets/
-│   ├── antigravity_showcase.png # ภาพตัวอย่างหน้าต่าง Antigravity คู่กับแผง Whale Screen
+│   ├── antigravity_showcase.jpg # ภาพตัวอย่างหน้าต่าง Antigravity คู่กับแผง Whale Screen
 │   ├── banner.jpg               # แบนเนอร์หลักของโปรเจกต์
 │   ├── hud_animated.svg         # โค้ดภาพเคลื่อนไหว Whale CMD Status HUD
 │   ├── social_preview.png       # ภาพ Social Preview (1280x640) สำหรับแชร์ลิงก์
