@@ -10,7 +10,7 @@
 [![Docker Desktop](https://img.shields.io/badge/Docker-Desktop%20Container-2496ED?style=for-the-badge&logo=docker&logoColor=white)](#-วิธีติดตั้งและเริ่มต้นใช้งาน)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](requirements.txt)
 [![Version 1.0.0](https://img.shields.io/badge/Version-v1.0.0-0EA5E9?style=for-the-badge&logo=semver&logoColor=white)](plugin.json)
-[![Antigravity MCP](https://img.shields.io/badge/MCP-Antigravity%20IDE-6366F1?style=for-the-badge&logo=google&logoColor=white)](mcp_config.json)
+[![Antigravity MCP](https://img.shields.io/badge/MCP-Antigravity-6366F1?style=for-the-badge&logo=google&logoColor=white)](mcp_config.json)
 [![Thai Eng OCR](https://img.shields.io/badge/Vision-AT--SPI2%20%2B%20OCR%20TH%2FEN-059669?style=for-the-badge&logo=tesseract&logoColor=white)](docker/desktop_ctl.py)
 [![License MIT](https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Ko-fi Support](https://img.shields.io/badge/Support-Ko--fi-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white)](https://ko-fi.com/xtanthaix)
